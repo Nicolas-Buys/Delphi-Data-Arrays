@@ -1,0 +1,15 @@
+program ElectricityP;
+
+uses
+  Forms,
+  ElectricityU in 'ElectricityU.pas' {frmQ1},
+  Dbase_u in 'Dbase_u.pas' {DataModule1: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TfrmQ1, frmQ1);
+  Application.CreateForm(TDataModule1, DataModule1);
+  Application.Run;
+end.
